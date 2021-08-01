@@ -1,0 +1,30 @@
+.box {
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    position: relative;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+.box:hover{
+    width: 300px;
+}
+
+@keyframes slideRight {
+    0% {
+        left: 0px;
+        transform: rotate(0deg);
+        opacity: 0%;
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        left: 300px;
+        background-color: greenyellow;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
